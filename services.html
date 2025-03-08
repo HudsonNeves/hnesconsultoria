@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Consultoria Educacional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .hero-section {
+            background-color: #343a40;
+            color: #fff;
+            padding: 60px 0;
+        }
+        .service-box {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 30px;
+            background-color: #f8f9fa;
+            text-align: center;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Consultoria Educacional</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Nossos Serviços</h1>
+            <p class="lead">Soluções estratégicas para transformar a educação com tecnologia.</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 - Suporte a Professores -->
+                <div class="col">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal1">
+                        <h4>Suporte a Professores</h4>
+                        <p>Ajuda na construção de planos de curso e atividades digitais.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 - Implementação de Plataformas -->
+                <div class="col">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal2">
+                        <h4>Implementação de Plataformas</h4>
+                        <p>Escolha, customização e treinamento para uso eficiente.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 - Otimização do Ensino -->
+                <div class="col">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal3">
+                        <h4>Otimização do Ensino</h4>
+                        <p>Uso de metodologias ativas e personalização da aprendizagem.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 - Automação de Processos -->
+                <div class="col">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal4">
+                        <h4>Automação de Processos</h4>
+                        <p>Redução de tarefas manuais e aumento da eficiência acadêmica.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 - Marketing Educacional -->
+                <div class="col">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal5">
+                        <h4>Marketing Educacional</h4>
+                        <p>Posicionamento digital e estratégias para captação de alunos.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 - Monitoramento e Suporte -->
+                <div class="col">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal6">
+                        <h4>Monitoramento e Suporte</h4>
+                        <p>Acompanhamento contínuo para melhorias e suporte técnico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modais -->
+    <!-- Modal 1 - Suporte a Professores -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel1">Apoio aos Professores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>🔹 Elaboração de Planos de Curso</h6>
+                    <p>Suporte na estruturação do plano de ensino alinhado às diretrizes curriculares.</p>
+                    
+                    <h6>🔹 Criação e Otimização de Atividades e Avaliações</h6>
+                    <p>Desenvolvimento de atividades interativas e avaliações alinhadas às melhores práticas educacionais.</p>
+                    
+                    <h6>🔹 Uso de Ambientes Virtuais de Aprendizagem (AVA)</h6>
+                    <p>Capacitação para a criação de conteúdos digitais envolventes e uso eficaz das plataformas.</p>
+                    
+                    <h6>🔹 Curadoria de Recursos Digitais</h6>
+                    <p>Indicação e personalização de materiais didáticos, vídeos e recursos multimídia para potencializar o ensino.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Implementação de Plataformas -->
+    <div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel2">Implementação de Plataformas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Escolha, customização e treinamento para uso eficiente das plataformas educacionais, garantindo integração e eficácia no processo de ensino-aprendizagem.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 - Otimização do Ensino -->
+    <div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="serviceModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel3">Otimização do Ensino</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Aplicação de metodologias ativas para personalizar a aprendizagem e otimizar o ensino, atendendo às necessidades de cada aluno.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 - Automação de Processos -->
+    <div class="modal fade" id="serviceModal4" tabindex="-1" aria-labelledby="serviceModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel4">Automação de Processos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Automatização de processos administrativos e acadêmicos para aumentar a eficiência e reduzir erros humanos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 - Marketing Educacional -->
+    <div class="modal fade" id="serviceModal5" tabindex="-1" aria-labelledby="serviceModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel5">Marketing Educacional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Desenvolvimento de estratégias de marketing digital para promover a instituição e atrair novos alunos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 - Monitoramento e Suporte -->
+    <div class="modal fade" id="serviceModal6" tabindex="-1" aria-labelledby="serviceModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel6">Monitoramento e Suporte</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Monitoramento contínuo da implementação dos serviços e suporte técnico para garantir que as soluções estejam sempre atualizadas e funcionando adequadamente.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Seção Atendimento Personalizado - Hnes Consultoria -->
+<section class="py-5" style="background-color: #f7f7f7;">
+    <div class="container">
+        <h2 class="text-center mb-5" style="font-family: 'Arial', sans-serif; font-weight: bold; color: #333;">Atendimentos Personalizados</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Atendimento Individualizado -->
+            <div class="col">
+                <div class="card shadow-lg border-0 rounded-3">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Arial', sans-serif; color: #0056b3;">Atendimento Individualizado</h5>
+                        <p class="card-text" style="text-align: justify;">Oferecemos soluções educacionais personalizadas, com foco nas necessidades individuais de professores, alunos e gestores. Trabalhamos no desenvolvimento de planos de ensino, estratégias pedagógicas e suporte contínuo, sempre alinhados aos objetivos e desafios específicos de cada cliente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atendimento em Grupo -->
+            <div class="col">
+                <div class="card shadow-lg border-0 rounded-3">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Arial', sans-serif; color: #0056b3;">Atendimento em Grupo</h5>
+                        <p class="card-text" style="text-align: justify;">Oferecemos workshops e treinamentos em grupo, visando o aprimoramento coletivo das equipes educacionais. Nossos programas incentivam a troca de conhecimento, o desenvolvimento de habilidades pedagógicas e a construção de soluções colaborativas para o ambiente educacional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atendimento Institucional -->
+            <div class="col">
+                <div class="card shadow-lg border-0 rounded-3">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Arial', sans-serif; color: #0056b3;">Atendimento Institucional</h5>
+                        <p class="card-text" style="text-align: justify;">Na Hnes Consultoria, auxiliamos instituições educacionais a integrar soluções tecnológicas, otimizar processos administrativos e capacitar suas equipes. Buscamos criar ambientes educacionais mais eficientes e inovadores, atendendo às demandas específicas de cada instituição.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 Consultoria Educacional | Todos os direitos reservados</p>
+            <p><a href="mailto:contato@consultoria.com">hnesconsultoria@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
